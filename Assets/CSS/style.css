@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+   
+}
+
+body {background-color: antiquewhite}
+
+/*Header section*/
+
+.header {padding: 20px; background-color: #2a607c;}
+.header h1 {display: inline-block; font-size: 48px; padding: 0.5%; background-color:antiquewhite; border-color: antiquewhite; color: #2a607c;}
+
+/*navigation section*/
+.header nav {padding-top: 15px; margin-right: 20px; float: right; font-size: 24px; margin-left: 25px; font-weight: 700;}
+.header nav ul li {display: inline-block; margin-left: 25px;}
+
+a {color: antiquewhite; text-decoration: underline;}   
+
+/*website banner*/
+
+.banner {background-size: cover; background-position: center; width: fit-content; border-bottom: solid 5px #2a607c ;}
+
+
+/*sidebar section*/
+
+.sidebar {min-width: 300px; min-height: 200px; display: flex; border-right: solid 3px #2a607c;}
+.sidebar-text { font-weight: 700; font-size: 24px; margin: auto; color: #2a607c; }
+
+
+/*about me section*/
+
+.about-me-container {min-height: 200px; display: flex;}
+.about-me { display: flex; }
+.about-me p {font-weight: 700; font-size: 24px; margin: auto; color: #2a607c; margin-left: 5px;}
+
+
+/*portfolio section*/
+
+.work-container {min-height: 200px; display: flex; border-top: #2a607c solid 5px;}
+.work { display: flex; flex-wrap: wrap;}
+.project { display: flex; flex-wrap: wrap; margin: 3px;}
+
+
+/*main application which image will link to the first challenge*/
+
+.mainproject{width: 100%; height: 600px; gap: 3px; border: #2a607c solid 1px; margin-top: 1px; margin-left: 3px; }
+.project img { width: 50%; height:300px;}
+.project1, .project2, .project3, .project4 {border: solid #2a607c 3px; gap: 3px; ; }
+
+
+/*contact me section*/
+
+.contact-me-container {min-height: 200px; display: flex; border-top: #2a607c solid 3px;}
+.contact-me {display: flex; margin: auto; }
+.contact-me ul li{font-size: 24px; display: inline-block; margin: 50px;}
+.contact-me a {color: #2a607c; font-weight: 700;}
+
+
+/*Tablet screen size*/ 
+
+@media only screen and (max-width: 768px) {
+  
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .header nav {
+        font-size: 20px; }
+
+    .sidebar {
+        display: none;
+    }
+
+    .about-me p,
+    .work,
+    .mainproject p,
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        width: 100%;
+    }
+
+    
+    .work,
+    .project {
+        flex-wrap: wrap;
+    }
+}
+
+/* Smartphone sreee size */
+@media only screen and (max-width: 480px) {
+   
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header nav {
+        font-size: 16px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .header nav ul li {
+        margin-left: 10px;
+    }
+
+    .about-me p,
+    .work,
+    .mainproject p,
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        width: 100%;
+    }
+
+    .work,
+    .project {
+        flex-wrap: wrap;
+    }
+
+    .contact-me ul li {
+        margin: 20px;
+    }
+}
